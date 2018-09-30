@@ -4,19 +4,7 @@
 <dict>
 	<key>method</key>
 	<string>app-store</string>
-	<key>teamID</key>
-	<string>XXXXXXXXXX</string>
-	<key>uploadBitcode</key>
 	<true/>
-	<key>compileBitcode</key>
-	<true/>
-	<key>uploadSymbols</key>
-	<true/>
-	<key>signingStyle</key>
-	<string>manual</string>
-	<key>signingCertificate</key>
-	<string>iOS Distribution: POSSIBLE Mobile</string>
-	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.client.appname</key>
 		<string>Client App Release</string>
