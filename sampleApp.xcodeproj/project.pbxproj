@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582F3C32219493A100C36E6D /* sampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582F3C31219493A100C36E6D /* sampleAppUITests.swift */; };
 		58AC2D302124605E007F2CEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AC2D2F2124605E007F2CEB /* AppDelegate.swift */; };
 		58AC2D322124605E007F2CEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AC2D312124605E007F2CEB /* ViewController.swift */; };
 		58AC2D352124605E007F2CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58AC2D332124605E007F2CEB /* Main.storyboard */; };
@@ -16,6 +17,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		582F3C34219493A100C36E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58AC2D242124605E007F2CEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58AC2D2B2124605E007F2CEB;
+			remoteInfo = sampleApp;
+		};
 		58AC2D4121246060007F2CEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 58AC2D242124605E007F2CEB /* Project object */;
@@ -26,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		582F3C2F219493A100C36E6D /* sampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		582F3C31219493A100C36E6D /* sampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleAppUITests.swift; sourceTree = "<group>"; };
+		582F3C33219493A100C36E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58AC2D2C2124605E007F2CEB /* sampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AC2D2F2124605E007F2CEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58AC2D312124605E007F2CEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		582F3C2C219493A100C36E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58AC2D292124605E007F2CEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,11 +74,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		582F3C30219493A100C36E6D /* sampleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				582F3C31219493A100C36E6D /* sampleAppUITests.swift */,
+				582F3C33219493A100C36E6D /* Info.plist */,
+			);
+			path = sampleAppUITests;
+			sourceTree = "<group>";
+		};
 		58AC2D232124605E007F2CEB = {
 			isa = PBXGroup;
 			children = (
 				58AC2D2E2124605E007F2CEB /* sampleApp */,
 				58AC2D4321246060007F2CEB /* sampleAppTests */,
+				582F3C30219493A100C36E6D /* sampleAppUITests */,
 				58AC2D2D2124605E007F2CEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +98,7 @@
 			children = (
 				58AC2D2C2124605E007F2CEB /* sampleApp.app */,
 				58AC2D4021246060007F2CEB /* sampleAppTests.xctest */,
+				582F3C2F219493A100C36E6D /* sampleAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +128,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		582F3C2E219493A100C36E6D /* sampleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582F3C38219493A100C36E6D /* Build configuration list for PBXNativeTarget "sampleAppUITests" */;
+			buildPhases = (
+				582F3C2B219493A100C36E6D /* Sources */,
+				582F3C2C219493A100C36E6D /* Frameworks */,
+				582F3C2D219493A100C36E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				582F3C35219493A100C36E6D /* PBXTargetDependency */,
+			);
+			name = sampleAppUITests;
+			productName = sampleAppUITests;
+			productReference = 582F3C2F219493A100C36E6D /* sampleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		58AC2D2B2124605E007F2CEB /* sampleApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58AC2D4921246060007F2CEB /* Build configuration list for PBXNativeTarget "sampleApp" */;
@@ -140,10 +187,14 @@
 		58AC2D242124605E007F2CEB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Michael Remes";
 				TargetAttributes = {
+					582F3C2E219493A100C36E6D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 58AC2D2B2124605E007F2CEB;
+					};
 					58AC2D2B2124605E007F2CEB = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -168,11 +219,19 @@
 			targets = (
 				58AC2D2B2124605E007F2CEB /* sampleApp */,
 				58AC2D3F21246060007F2CEB /* sampleAppTests */,
+				582F3C2E219493A100C36E6D /* sampleAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		582F3C2D219493A100C36E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58AC2D2A2124605E007F2CEB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +252,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		582F3C2B219493A100C36E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582F3C32219493A100C36E6D /* sampleAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58AC2D282124605E007F2CEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +280,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		582F3C35219493A100C36E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58AC2D2B2124605E007F2CEB /* sampleApp */;
+			targetProxy = 582F3C34219493A100C36E6D /* PBXContainerItemProxy */;
+		};
 		58AC2D4221246060007F2CEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 58AC2D2B2124605E007F2CEB /* sampleApp */;
@@ -240,6 +312,47 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		582F3C36219493A100C36E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = sampleAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.sampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sampleApp;
+			};
+			name = Debug;
+		};
+		582F3C37219493A100C36E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = sampleAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.sampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sampleApp;
+			};
+			name = Release;
+		};
 		58AC2D4721246060007F2CEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -431,6 +544,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		582F3C38219493A100C36E6D /* Build configuration list for PBXNativeTarget "sampleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582F3C36219493A100C36E6D /* Debug */,
+				582F3C37219493A100C36E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		58AC2D272124605E007F2CEB /* Build configuration list for PBXProject "sampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
